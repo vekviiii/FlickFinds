@@ -2,6 +2,17 @@
     height:100px;
     background-color: #333;
     color: aliceblue;
-    font-size: 7vh;
+    font-size: clamp(4vh, 7vw, 7vh);
     font-weight: 600;
+    position: relative;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2%;
+    width: 100%;
+    background-color: #20202094;
 }
